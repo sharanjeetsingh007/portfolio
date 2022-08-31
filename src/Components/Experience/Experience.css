@@ -1,0 +1,120 @@
+.Experience {
+  /* height: calc(100vh - 53px); */
+  height: 740px;
+  /* width: 100vw; */
+  /* border: 7px solid purple; */
+  background-color: white;
+  position: relative;
+}
+
+.experience_background_image {
+  position: absolute;
+  z-index: 2;
+  /* border: 2px solid black; */
+  /* height: calc(100vh - 65px); */
+  /* height: 800px; */
+  height: 100%;
+  width: 100%;
+  /* top: 0;
+  left: 0; */
+  clip-path: polygon(79% 77%, 100% 63%, 100% 100%, 49% 100%);
+}
+
+.experience_background_image > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.experience__main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100vw; */
+  background-color: white;
+  z-index: 1;
+  /* height: calc(100vh - 53px); */
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 46% 100%, 0 100%, 0% 50%); */
+  /* clip-path: polygon(0 0, 100% 0, 100% 57%, 59% 100%, 0 100%, 0% 50%); */
+  padding: 50px;
+}
+
+.experience__main > .heading > h3 {
+  border-bottom: 4px solid #74bbebd7;
+  padding-bottom: 5px;
+  width: 140px;
+}
+
+.timeline {
+  position: absolute;
+
+  /* top: 0;
+  left: 0; */
+  /* top: 0;
+  left: 0;
+  margin-left: 400px;
+  margin-top: 400px; */
+  margin-left: 120px;
+  margin-top: 140px;
+
+  /* width: 90vw; */
+  height: 500px;
+  overflow: scroll;
+  z-index: 3;
+}
+
+.timeline__custom {
+  /* border: 2px solid black; */
+  /* padding: 10px;
+  height: 160px; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px !important;
+  /* background-color: #54ced77d !important; */
+}
+
+.timeline__custom > h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.timeline__custom > h4 {
+  font-size: 14px;
+}
+
+.timeline__custom > h4 {
+  margin-bottom: 5px !important;
+}
+
+.timeline__custom > p {
+  font-size: 12px !important;
+}
+
+@media only screen and (max-width: 1370px) {
+  .timeline {
+    margin-left: 120px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .timeline {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1196px) {
+  .timeline {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 1043px) {
+  .timeline {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .timeline {
+    margin-left: 10px;
+  }
+}
