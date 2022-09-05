@@ -7,38 +7,31 @@ import "swiper/css/pagination";
 import "./SliderProjects.css";
 import "swiper/css/zoom";
 import "swiper/css/lazy";
-import { Navigation, Pagination, Mousewheel, Keyboard, Zoom, Lazy } from "swiper";
-import Gmail from "../../Assets/projects_images/gmail.png"
-import Gmail2 from "../../Assets/projects_images/gmail2.png"
-import Gmail3 from "../../Assets/projects_images/gmail3.png"
-import SliderProjectsCard from '../SliderProjectsCard/SliderProjectsCard';
+import { Navigation, Pagination, Mousewheel, Keyboard, Zoom } from "swiper";
 import allImages from "../../images"
-import { imageListItemClasses } from '@mui/material';
 
 
 
 
-function SliderProjects({ projectSelected, initialSlide }) {
+function SliderProjects({ projectSelected }) {
 
     const [filterImage, setFilterImage] = useState([])
-    const [swiper, setSwiper] = React.useState(null);
+    const [swiper, setSwiper] = useState(null);
     const swiperRef = useRef(null);
 
-    console.log(initialSlide, "initialSlide")
 
-
-    const filterSelected = () => {
-        const filterdata = allImages.filter((data) => data.id === projectSelected)
-        setFilterImage(filterdata)
-    }
 
 
     useEffect(() => {
+        const filterSelected = () => {
+            const filterdata = allImages.filter((data) => data.id === projectSelected)
+            setFilterImage(filterdata)
+        }
         filterSelected()
         if (swiper) {
             swiper.activeIndex = 0
         }
-    }, [projectSelected])
+    }, [projectSelected, swiper])
 
 
 
@@ -68,7 +61,7 @@ function SliderProjects({ projectSelected, initialSlide }) {
                         return <SwiperSlide
                             key={index}>
                             <div className="swiper-zoom-container">
-                                <img src={image.Image}
+                                <img src={image.Image} alt="slider"
                                 />
 
                             </div>

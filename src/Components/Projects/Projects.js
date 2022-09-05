@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SliderProjects from '../SliderProjects/SliderProjects';
 import { Zoom } from 'react-reveal';
-import projectBg from "../../Assets/project_bg2.jpeg"
 import back from "../../Assets/back4.png"
 import IconButton from '@mui/material/IconButton';
 
@@ -26,8 +25,6 @@ function Projects() {
 
 
 
-
-
     const changeInitalSlide = (value) => {
         setInitialSlide(value)
     }
@@ -35,8 +32,6 @@ function Projects() {
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
-
-        // console.log(event, "event")
     };
 
 
@@ -44,7 +39,6 @@ function Projects() {
         setInitialSlide(0)
     }, [value])
 
-    console.log(value, "value projects")
     return (
         <div className='Projects' id="projects">
             <div className='background__image'>
@@ -66,10 +60,9 @@ function Projects() {
                 </div>
                 <Zoom duration={400}>
 
-                    <div className={value == 0 ? 'projects__wrapper' : 'projects__wrapper-active'}>
+                    <div className={value === 0 ? 'projects__wrapper' : 'projects__wrapper-active'}>
 
-                        <div className={value == 0 ? 'left__col-active ' : 'left__col'}
-                        // style={{ flex: value == 0 ? "1" : ".5" }}
+                        <div className={value === 0 ? 'left__col-active ' : 'left__col'}
                         >
 
                             <Accordion
@@ -92,7 +85,7 @@ function Projects() {
                                     aria-controls="panel2a-content"
                                     id="panel2a-header"
                                 >
-                                    <Typography><h4>Gmail Clone</h4></Typography>
+                                    <Typography component={'span'} ><h4>Gmail Clone</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -136,7 +129,7 @@ function Projects() {
                                     aria-controls="panel2a-content"
                                     id="panel2a-header"
                                 >
-                                    <Typography><h4>Roster App (Internship)</h4></Typography>
+                                    <Typography component={'span'}><h4>Roster App (Internship)</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -176,7 +169,7 @@ function Projects() {
                                     aria-controls="panel2a-content"
                                     id="panel2a-header"
                                 >
-                                    <Typography><h4>Virtual CSO (Internship)</h4></Typography>
+                                    <Typography component={'span'}><h4>Virtual CSO (Internship)</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -217,7 +210,7 @@ function Projects() {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography><h4>Canteen Management System</h4></Typography>
+                                    <Typography component={'span'}><h4>Canteen Management System</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -258,7 +251,7 @@ function Projects() {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography><h4>LinkedIn Clone</h4></Typography>
+                                    <Typography component={'span'}><h4>LinkedIn Clone</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -296,7 +289,7 @@ function Projects() {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography><h4>Google Maps 2.0</h4></Typography>
+                                    <Typography component={'span'}><h4>Google Maps 2.0</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -335,7 +328,7 @@ function Projects() {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography><h4>Blog App</h4></Typography>
+                                    <Typography component={'span'}><h4>Blog App</h4></Typography>
 
                                 </AccordionSummary>
                                 <AccordionDetails
@@ -371,7 +364,7 @@ function Projects() {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography><h4>Quiz App</h4></Typography>
+                                    <Typography component={'span'}><h4>Quiz App</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -405,7 +398,7 @@ function Projects() {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography><h4>Weather App</h4></Typography>
+                                    <Typography component={'span'}><h4>Weather App</h4></Typography>
                                 </AccordionSummary>
                                 <AccordionDetails
                                     onClick={e => e.stopPropagation()}
@@ -425,7 +418,7 @@ function Projects() {
                             </Accordion>
 
                         </div>
-                        <div className={value == 0 ? 'right__col-unactive' : 'right__col'}
+                        <div className={value === 0 ? 'right__col-unactive' : 'right__col'}
                         // style={{ display: value == 0 ? "none" : "flex" }}
                         >
                             {/* <img src={Gmail} />    */}
