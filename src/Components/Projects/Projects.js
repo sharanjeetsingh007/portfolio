@@ -9,6 +9,9 @@ import SliderProjects from '../SliderProjects/SliderProjects';
 import { Zoom } from 'react-reveal';
 import projectBg from "../../Assets/project_bg2.jpeg"
 import back from "../../Assets/back4.png"
+import IconButton from '@mui/material/IconButton';
+
+import { Link } from "react-scroll";
 
 import Button from '@mui/material/Button';
 
@@ -52,6 +55,14 @@ function Projects() {
             <div className='projects__main'>
                 <div className='heading'>
                     <h3>Projects</h3>
+                    <Link
+                        to="experience" activeClass="active" spy={true} smooth={true} duration={500} offset={-49}
+                    > <IconButton className="scroll__btn" aria-label="scroll-down">
+                            <ExpandMoreIcon
+                                style={{ fontSize: "35px", color: "black" }}
+                            />
+                        </IconButton>
+                    </Link>
                 </div>
                 <Zoom duration={400}>
 
@@ -60,6 +71,7 @@ function Projects() {
                         <div className={value == 0 ? 'left__col-active ' : 'left__col'}
                         // style={{ flex: value == 0 ? "1" : ".5" }}
                         >
+
                             <Accordion
                                 className='accordin'
 
@@ -103,6 +115,90 @@ function Projects() {
 
                                 </AccordionDetails>
                             </Accordion>
+
+                            <Accordion
+                                className='accordin'
+
+                                expanded={expanded === 'panel8'} onChange={handleChange('panel8')}
+
+                                onClick={() => {
+                                    if (value === 8) {
+                                        setValue(0)
+                                    } else {
+                                        setValue(8)
+
+                                    }
+
+                                }}
+                            >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel2a-content"
+                                    id="panel2a-header"
+                                >
+                                    <Typography><h4>Roster App (Internship)</h4></Typography>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    onClick={e => e.stopPropagation()}
+
+                                >
+                                    <Typography>
+                                        This project was undertaken in Internship for company <b>Reesby pty ltd, Melbourne</b>. The project was about creating Web Application for the employees for to check theri roster and sign in and sign out while their working time. <br />
+                                        The application has clocking system to record the time employees statrt, take break and finish their work. The application alos has the Calendar feacuter where employees can set up their roster of upcoming week.
+                                        Calendar consist of the functionality of setting data of fuul-time, Half day and Absent availibility features as well as displaying all the upcoming Holidays and festivels using Google API. It also included feacture of reaeation for 1-3 weeks asa weel as
+                                        Date range and select mulitple date features to give employees flexibility to choose their roster.
+                                        <br /> Tech stack - React.js, HTML5, CSS3, Ant design, material UI, Node.js, Redux, JWT Token
+
+                                    </Typography>
+                                    <Button className='demo demo__internship' variant="contained"
+                                        style={{ width: "18%", marginTop: "15px", padding: "4px", cursor: "no-drop" }}
+                                    >N<span style={{ textTransform: "lowercase" }}>ot available</span></Button>
+
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion
+                                className='accordin'
+
+                                expanded={expanded === 'panel9'} onChange={handleChange('panel9')}
+
+                                onClick={() => {
+                                    if (value === 9) {
+                                        setValue(0)
+                                    } else {
+                                        setValue(9)
+
+                                    }
+
+                                }}
+                            >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel2a-content"
+                                    id="panel2a-header"
+                                >
+                                    <Typography><h4>Virtual CSO (Internship)</h4></Typography>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    onClick={e => e.stopPropagation()}
+
+                                >
+                                    <Typography>
+                                        As a Start-up Company <b>SwanforSight pty ltd, Melbourne</b>, there were different roles assigned during the internship as <b>Full stack developer</b> which included Designining, Developing and Testing differnt components and functionality includiing cloud platforms (Azure and AWS) and ,migration and maintaing server.
+                                        <br />The Project was innovated for business to rectify and resolve security threats in their apllication, networks, API's and hardwares. The project was focusing on differnt cyber attacks including phishing, MySql injection, DOS attacks and Malware attacks.
+                                        In the internship along wiht the assigned role of <b>Full stack developer</b> I got the opportunity to also graps the topics and experience in cloud platforms for API's devlopment and maintanance, creating connection with databases, deployment of servers ,CI/CD pipline for continuous deployment of the application as well as using differnt serveces including Docker and Fuction App and Aws Lambda.
+                                        <br /> Tech stack - React.js, HTML5, CSS3, material UI, Node.js, Express.js, Azure, AWS.
+
+
+
+                                    </Typography>
+                                    <Button className='demo demo__internship' variant="contained"
+                                        style={{ width: "18%", marginTop: "15px", padding: "4px", cursor: "no-drop" }}
+
+                                    >N<span style={{ textTransform: "lowercase" }}>ot Available</span></Button>
+
+                                </AccordionDetails>
+                            </Accordion>
+
                             <Accordion
                                 className='accordin'
                                 expanded={expanded === 'panel1'} onChange={handleChange('panel1')}

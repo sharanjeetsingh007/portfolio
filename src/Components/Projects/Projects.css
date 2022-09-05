@@ -1,7 +1,7 @@
 .Projects {
   /* border: 1px solid green; */
   /* height: calc(100vh - 53px); */
-  height: 800px;
+  height: 790px;
   position: relative;
   /* width: 100vw; */
 }
@@ -49,34 +49,42 @@
 } */
 
 .projects__main > .heading {
-  margin-bottom: 70px;
+  margin-bottom: 45px;
 }
 
 .projects__wrapper {
+  /* border: 2px solid red !important; */
+  max-width: 1305px !important;
+
   border: 2px solid whitesmoke !important;
   /* padding: 15px; */
   display: flex;
-  /* height: 370px; */
-  height: 459px;
+  /* height: 459px; */
+  height: 575px;
 
   /* height: auto; */
   /* flex-wrap: wrap; */
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
+  overflow: scroll;
 }
 
 .projects__wrapper-active {
+  /* border: 2px solid red !important; */
+  max-width: 1305px !important;
+
   border: 2px solid whitesmoke !important;
   /* padding: 15px; */
   display: flex;
-  height: 510px;
+  height: 575px;
   /* height: auto; */
 
   /* flex-wrap: wrap; */
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
+  overflow: scroll;
 }
 
 .left__col {
@@ -134,22 +142,36 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Projects {
+    height: 900px;
+  }
+
   .projects__wrapper {
+    /* border: 1px solid red !important; */
+
     flex-direction: column;
-    height: 580px;
+    height: 490px;
+  }
+
+  .projects__wrapper-active {
+    /* border: 1px solid red !important; */
+    height: 700px !important;
+    flex-direction: column;
+    /* height: auto; */
   }
   .left__col {
     /* border: 1px solid red; */
     padding: 15px;
     border-right: 2px solid whitesmoke;
-    height: 400px;
+    height: 900px !important;
     width: 100%;
     flex: 1;
     flex-basis: 0;
-    overflow: scroll;
+    /* overflow: scroll; */
 
     transition: all 0.3s;
   }
+
   .right__col {
     /* display: none; */
     /* border: 1px solid black; */
@@ -165,18 +187,42 @@
 
 .demo {
   margin-top: 20px;
-  padding: 5px 50px !important;
+  padding: 4px 50px !important;
   border-radius: 5px !important;
-  border: 1px solid #215992 !important;
+  border: 1px solid #0c1cb5 !important;
+  width: 199px !important;
 
-  background-color: #215992 !important;
+  /* background-color: #215992 !important; */
+  /* background-color: #3161c9 !important; */
+  background-color: #0c1cb5 !important;
 }
 
 .demo:hover {
   background-color: white !important;
-  color: #215992;
+  color: #0c1cb5;
+  border: 1px solid white !important;
+  border-bottom: 1px solid #0c1cb5 !important;
+  /* transition: width 1s; */
+}
+
+.demo__internship {
+  width: 199px !important;
+}
+
+.demo__internship:hover {
+  background-color: #0c1cb5 !important;
+
+  border: 1px solid #0c1cb5 !important;
+  color: white;
 }
 
 .accordin {
   padding: 6px !important;
+  /* height: 60px !important; */
+  pointer-events: visible !important;
+}
+
+.MuiPaper-root {
+  /* border: 3px solid red !important; */
+  pointer-events: visible !important;
 }

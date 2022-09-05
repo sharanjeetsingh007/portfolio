@@ -3,6 +3,7 @@
   height: 800px;
   /* border: 2px solid black; */
   background-color: white;
+  position: relative;
 }
 
 .skills__main {
@@ -12,7 +13,12 @@
 }
 
 .heading {
+  /* border: 1px solid red; */
+
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .heading > h3 {
@@ -50,3 +56,9 @@
     width: 100%;
   }
 } */
+
+@media only screen and (max-width: 600px) {
+  .cards__skills {
+    height: 550px;
+  }
+}

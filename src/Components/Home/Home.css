@@ -10,6 +10,18 @@
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  position: relative;
+}
+
+.down__btn {
+  position: absolute !important;
+  height: 70px !important;
+  bottom: 120px !important;
+  right: -177px !important;
+  left: -177px !important;
+  width: 70px !important;
+  border: none !important;
+  padding-top: 10px !important;
 }
 
 .intro__description {
@@ -125,13 +137,62 @@
 }
 @media only screen and (max-width: 414px) {
   .intro__description {
-    margin-top: 55%;
+    margin-top: 60%;
+  }
+  .intro__description > h1 {
+    font-size: 26px;
+  }
+  .intro__description > p {
+    font-size: 16px;
+  }
+  .resume {
+    font-size: 13px;
+  }
+
+  .resume__btn {
+    padding: 5px !important;
+    font-size: 10px !important;
+  }
+
+  .down__btn {
+    right: -157px !important;
+    left: -157px !important;
+  }
+}
+@media only screen and (max-width: 393px) {
+  .intro__description {
+    margin-top: 60% !important;
+  }
+  .intro__description > h1 {
+    font-size: 20px;
+  }
+  .intro__description > p {
+    font-size: 14px;
+  }
+  .resume {
+    font-size: 13px;
+  }
+
+  .resume__btn {
+    padding: 4px !important;
+    font-size: 10px !important;
+  }
+
+  .down__btn {
+    right: -135px !important;
+    left: -135px !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .intro__description {
+    margin-top: 70% !important;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .intro__description {
-    margin-top: 60%;
+    margin-top: 70% !important;
   }
 
   .intro__description > h1 {
@@ -147,5 +208,9 @@
   .resume__btn {
     padding: 0 !important;
     font-size: 10px !important;
+  }
+  .down__btn {
+    right: -135px !important;
+    left: -135px !important;
   }
 }

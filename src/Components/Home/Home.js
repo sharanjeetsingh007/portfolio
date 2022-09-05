@@ -5,7 +5,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 import Resume from "../../Assets/Resume.pdf"
-
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link } from "react-scroll";
+import { BsChevronDown } from 'react-icons/bs';
+import Jump from 'react-reveal/Jump';
 
 
 
@@ -45,6 +48,17 @@ function Home() {
                         >Resume</Button>
                     </div>
                 </div>
+                {/* <button className='down__btn'>k</button> */}
+                <Jump delay={50}>
+                    <Link
+                        to="skills" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}
+                    > <IconButton className="down__btn" aria-label="scroll-down">
+                            <BsChevronDown
+                                style={{ fontSize: "40px", color: "black" }}
+                            />
+                        </IconButton>
+                    </Link>
+                </Jump>
 
             </div>
 

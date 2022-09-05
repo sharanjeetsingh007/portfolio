@@ -11,8 +11,11 @@ import { DiMysql } from 'react-icons/di';
 import { SiMongodb } from 'react-icons/si';
 import { SiAmazonaws } from 'react-icons/si';
 import { SiMicrosoftazure } from 'react-icons/si';
+import { SiRedux } from 'react-icons/si';
 import Bounce from 'react-reveal/Bounce';
-
+import IconButton from '@mui/material/IconButton';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link } from "react-scroll";
 
 
 
@@ -23,6 +26,14 @@ function Skills() {
             <div className='skills__main'>
                 <div className='heading'>
                     <h3>Skills</h3>
+                    <Link
+                        to="projects" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}
+                    > <IconButton className="scroll__btn" aria-label="scroll-down">
+                            <ExpandMoreIcon
+                                style={{ fontSize: "35px", color: "black" }}
+                            />
+                        </IconButton>
+                    </Link>
                 </div>
                 {/* <Bounce bottom duration={500}> */}
 
@@ -32,7 +43,7 @@ function Skills() {
                         Desc={"More than 1 year experience in using HTML and HTML5 with creating and writing standard way for better readability "} />
                     <CardSkill
                         Icon={<CssIcon style={{ fontSize: "50px", color: '#69BAD9' }} />}
-                        Desc={"More than 1 year experience in using CSS and CSS 5 with creating and writing standard way for better readability as well as front end fram works like taillwind, mui and style component"}
+                        Desc={"More than 1 year experience in using CSS and CSS 5 with front end frame works like taillwind, mui and style component"}
                     />
                     <CardSkill
                         Icon={<JavascriptIcon style={{ fontSize: "50px", color: '#69BAD9' }} />}
@@ -40,15 +51,15 @@ function Skills() {
                     />
                     <CardSkill
                         Icon={<DiReact style={{ fontSize: "50px", color: '#69BAD9' }} />}
-                        Desc={"More than 1 year experience in using React.js for making website and web apps with efficient perfomance and readable code as well as state management libraries like Redux and Context API"}
+                        Desc={"More than 1 year experience in using React.js for making website and web apps with efficient perfomance and readable code"}
                     />
                     <CardSkill
                         Icon={<DiPython style={{ fontSize: "50px", color: '#69BAD9' }} />}
-                        Desc={"Familiar with the language and utlizing for making Back end as well as Data analysist "}
+                        Desc={"Familiar with the language and utlizing for making Back end as well as Data analysis "}
                     />
                     <CardSkill
-                        Icon={<DiPhp style={{ fontSize: "50px", color: '#69BAD9' }} />}
-                        Desc={"More than 1 year experience in using HTML and HTML5 with creating and writing standard way for better readability "}
+                        Icon={<SiRedux style={{ fontSize: "50px", color: '#69BAD9' }} />}
+                        Desc={"Experience state management libraru like Redux, Context API"}
                     />
                     <CardSkill
                         Icon={<DiMysql style={{ fontSize: "50px", color: '#69BAD9' }} />}

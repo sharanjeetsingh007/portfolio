@@ -37,11 +37,11 @@ function Header() {
                     </Link>
                     <Link to="skills" activeClass="active" spy={true} smooth={true} duration={500} offset={-59}>
                         <li className='tag'><h4>Skills</h4></li></Link>
-                    <Link to="projects" activeClass="active" spy={true} smooth={true} duration={500} offset={-59}>
+                    <Link to="projects" activeClass="active" spy={true} smooth={true} duration={500} offset={-55}>
                         <li className='tag'><h4>Projects</h4></li></Link>
-                    <Link to="experience" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}>
+                    <Link to="experience" activeClass="active" spy={true} smooth={true} duration={500} offset={-49}>
                         <li className='tag'><h4>Experience</h4></li></Link>
-                    <Link to="contact" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}>
+                    <Link to="contact" activeClass="active" spy={true} smooth={true} duration={500} offset={-48}>
                         <li className='tag'><h4>Contact</h4></li></Link>
                 </ul>
             </nav>

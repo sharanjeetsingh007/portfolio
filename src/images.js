@@ -28,6 +28,24 @@ import quiz3 from "./Assets/projects_images/quiz3.png"
 import quiz4 from "./Assets/projects_images/quiz4.png"
 import weather1 from "./Assets/projects_images/weather1.png"
 import weather2 from "./Assets/projects_images/weather2.png"
+import roster1 from "./Assets/projects_images/roster1.png"
+import roster2 from "./Assets/projects_images/roster2.png"
+import roster3 from "./Assets/projects_images/roster3.png"
+import roster4 from "./Assets/projects_images/roster4.png"
+import roster5 from "./Assets/projects_images/roster5.png"
+import roster6 from "./Assets/projects_images/roster6.png"
+import roster7 from "./Assets/projects_images/roster7.png"
+import roster8 from "./Assets/projects_images/roster8.png"
+import roster9 from "./Assets/projects_images/roster9.png"
+import swan1 from "./Assets/projects_images/swan1.png"
+import swan2 from "./Assets/projects_images/swan2.png"
+import swan3 from "./Assets/projects_images/swan3.png"
+import swan4 from "./Assets/projects_images/swan4.png"
+import swan5 from "./Assets/projects_images/swan5.png"
+import swan6 from "./Assets/projects_images/swan6.png"
+import swan7 from "./Assets/projects_images/swan7.png"
+
+
 
 
 
@@ -195,6 +213,85 @@ const allImages = [
 
                 Image: weather2
             },
+
+        ],
+    },
+    {
+        Name: "Roster App",
+        id: 8,
+        Images: [
+            {
+
+                Image: roster1
+            },
+            {
+
+                Image: roster2
+            },
+            {
+
+                Image: roster3
+            },
+            {
+
+                Image: roster4
+            },
+            {
+
+                Image: roster5
+            },
+            {
+
+                Image: roster6
+            },
+            {
+
+                Image: roster7
+            },
+            {
+
+                Image: roster8
+            },
+            {
+
+                Image: roster9
+            },
+
+        ],
+    },
+    {
+        Name: "swan App",
+        id: 9,
+        Images: [
+            {
+
+                Image: swan1
+            },
+            {
+
+                Image: swan2
+            },
+            {
+
+                Image: swan3
+            },
+            {
+
+                Image: swan4
+            },
+            {
+
+                Image: swan5
+            },
+            {
+
+                Image: swan6
+            },
+            {
+
+                Image: swan7
+            },
+
 
         ],
     },

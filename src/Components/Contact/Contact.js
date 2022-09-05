@@ -11,7 +11,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import Alert from '@mui/material/Alert';
 import { Fade } from 'react-reveal';
-
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import { Link } from "react-scroll";
 
 
 
@@ -104,6 +105,14 @@ function Contact() {
             <div className='contacts__main'>
                 <div className='heading'>
                     <h3>Contact</h3>
+                    <Link
+                        to="home" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}
+                    > <IconButton className="scroll__btn" aria-label="scroll-down">
+                            <ExpandLessIcon
+                                style={{ fontSize: "35px", color: "black" }}
+                            />
+                        </IconButton>
+                    </Link>
                 </div>
                 <Fade duration={900}>
 
@@ -175,7 +184,6 @@ function Contact() {
                     </div>
                 </Fade>
             </div>
-
         </div>
     )
 }
