@@ -6,13 +6,14 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SliderProjects from '../SliderProjects/SliderProjects';
-import { Zoom } from 'react-reveal';
+import { Zoom } from 'react-awesome-reveal';
 import back from "../../Assets/back4.png"
 import IconButton from '@mui/material/IconButton';
 
 import { Link } from "react-scroll";
 
 import Button from '@mui/material/Button';
+
 
 
 
@@ -58,7 +59,7 @@ function Projects() {
                         </IconButton>
                     </Link>
                 </div>
-                <Zoom duration={400}>
+                <Zoom triggerOnce duration={400}>
 
                     <div className={value === 0 ? 'projects__wrapper' : 'projects__wrapper-active'}>
 
@@ -441,11 +442,12 @@ function Projects() {
 
 
                     </div>
-                </Zoom>
-            </div>
 
-        </div >
+                </Zoom>
+
+
+            </div>
+        </div>
     )
 }
-
 export default Projects

@@ -12,16 +12,21 @@
   justify-content: center;
   position: relative;
 }
+.bounce_145ouu2 {
+  /* border: 3px solid red !important; */
+  /* width: 90px; */
+}
 
-.down__btn {
+.bounce_145ouu2 {
   position: absolute !important;
   height: 70px !important;
   bottom: 120px !important;
-  right: -177px !important;
-  left: -177px !important;
-  width: 70px !important;
-  border: none !important;
+  /* right: -177px !important;
+  left: -177px !important; */
+  width: fit-content !important;
+  /* border: none !important; */
   padding-top: 10px !important;
+  color: "black" !important;
 }
 
 .intro__description {

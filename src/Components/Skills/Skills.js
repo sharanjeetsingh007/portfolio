@@ -5,14 +5,12 @@ import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import { DiReact } from 'react-icons/di';
-import { DiPhp } from 'react-icons/di';
 import { DiPython } from 'react-icons/di';
 import { DiMysql } from 'react-icons/di';
 import { SiMongodb } from 'react-icons/si';
 import { SiAmazonaws } from 'react-icons/si';
 import { SiMicrosoftazure } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
-import Bounce from 'react-reveal/Bounce';
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from "react-scroll";
@@ -35,7 +33,7 @@ function Skills() {
                         </IconButton>
                     </Link>
                 </div>
-                {/* <Bounce bottom duration={500}> */}
+
 
                 <div className='cards__skills'>
                     <CardSkill
@@ -82,11 +80,11 @@ function Skills() {
 
 
                 </div>
-                {/* </Bounce> */}
 
             </div>
 
-        </div>
+
+        </div >
     )
 }
 

@@ -10,7 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import Alert from '@mui/material/Alert';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Link } from "react-scroll";
 
@@ -114,7 +114,7 @@ function Contact() {
                         </IconButton>
                     </Link>
                 </div>
-                <Fade duration={900}>
+                <Fade triggerOnce duration={900}>
 
                     <div className='contacts__wrapper'>
 

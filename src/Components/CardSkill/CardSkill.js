@@ -1,16 +1,21 @@
 import React from 'react'
 import "./CardSkill.css"
 
-import Slide from 'react-reveal/Slide';
+import Slide from 'react-awesome-reveal';
+
+
 
 
 function CardSkill({ Desc, Icon }) {
     return (
-        <Slide bottom duration={600}>
+        <Slide triggerOnce direction="bottom" duration={600}>
 
-            <div className='CardSkill'>
+            <div className="CardSkill">
+
                 {Icon}
                 <p>{Desc}</p>
+
+
 
             </div>
         </Slide>

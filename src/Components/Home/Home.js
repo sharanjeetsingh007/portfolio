@@ -8,11 +8,20 @@ import Resume from "../../Assets/Resume.pdf"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from "react-scroll";
 import { BsChevronDown } from 'react-icons/bs';
-import Jump from 'react-reveal/Jump';
+import Bounce from 'react-awesome-reveal';
+import AttentionSeeker from "react-awesome-reveal";
+import { bounce } from 'react-animations';
+import { StyleSheet, css } from 'aphrodite';
 
 
+const styles = StyleSheet.create({
+    bounce: {
+        animationName: bounce,
+        animationDuration: '1s',
+        display: "block",
 
-
+    }
+})
 
 
 function Home() {
@@ -49,16 +58,20 @@ function Home() {
                     </div>
                 </div>
                 {/* <button className='down__btn'>k</button> */}
-                <Jump delay={50}>
+                {/* <AttentionSeeker effect="bounce" delay={50} triggerOnce> */}
+                <div className={css(styles.bounce)}>
                     <Link
+                        // className={css(styles.bounce)}
                         to="skills" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}
                     > <IconButton className="down__btn" aria-label="scroll-down">
                             <BsChevronDown
                                 style={{ fontSize: "40px", color: "black" }}
                             />
                         </IconButton>
+
                     </Link>
-                </Jump>
+                </div>
+                {/* </AttentionSeeker> */}
 
             </div>
 

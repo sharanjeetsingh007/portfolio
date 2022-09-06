@@ -29,10 +29,10 @@
 
 .CardSkill > p {
   /* border: 1px solid red; */
-  margin-top: 15px;
+  margin-top: 15px !important;
   /* font-; */
-  line-height: 23px;
-  text-align: center;
-  height: 150px;
-  overflow: scroll;
+  line-height: 23px !important;
+  text-align: center !important;
+  height: 150px !important;
+  overflow: scroll !important;
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Outlet, Link } from "react-router-dom";
 import Experience from '../Components/Experience/Experience';
 import Header from '../Components/Header/Header';
 import Home from '../Components/Home/Home';
