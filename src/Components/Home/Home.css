@@ -17,8 +17,8 @@
   position: absolute !important;
   height: 70px !important;
   bottom: 120px !important;
-  right: -177px !important;
-  left: -177px !important;
+  /* right: -177px !important;
+  left: -177px !important; */
   width: fit-content !important;
   /* border: none !important; */
   padding-top: 10px !important;

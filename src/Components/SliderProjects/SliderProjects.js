@@ -9,6 +9,7 @@ import "swiper/css/zoom";
 import "swiper/css/lazy";
 import { Navigation, Pagination, Mousewheel, Keyboard, Zoom } from "swiper";
 import allImages from "../../images"
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 
@@ -17,6 +18,8 @@ function SliderProjects({ projectSelected }) {
 
     const [filterImage, setFilterImage] = useState([])
     const [swiper, setSwiper] = useState(null);
+    const [loader, setLoader] = useState(true);
+
     const swiperRef = useRef(null);
 
 
@@ -30,6 +33,7 @@ function SliderProjects({ projectSelected }) {
         filterSelected()
         if (swiper) {
             swiper.activeIndex = 0
+            setLoader(true)
         }
     }, [projectSelected, swiper])
 
@@ -61,8 +65,16 @@ function SliderProjects({ projectSelected }) {
                         return <SwiperSlide
                             key={index}>
                             <div className="swiper-zoom-container">
+                                {loader && <CircularProgress
+                                    thickness={1}
+                                    style={{ color: "#144B76" }}
+                                />}
                                 <img src={image.Image} alt="slider"
+                                    onLoad={() => setLoader(false)}
+                                    style={{ display: loader ? "none" : "block" }}
                                 />
+
+
 
                             </div>
 
