@@ -217,9 +217,12 @@
 }
 
 .accordin {
-  padding: 6px !important;
-  /* height: 60px !important; */
+  padding: 0 6px !important;
   pointer-events: visible !important;
+}
+
+.MuiButtonBase-root {
+  padding: 6px !important;
 }
 
 .MuiPaper-root {
