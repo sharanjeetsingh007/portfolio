@@ -5,11 +5,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 import Resume from "../../Assets/Resume.pdf"
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from "react-scroll";
 import { BsChevronDown } from 'react-icons/bs';
-import Bounce from 'react-awesome-reveal';
-import AttentionSeeker from "react-awesome-reveal";
 import { bounce } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 

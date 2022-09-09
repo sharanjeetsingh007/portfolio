@@ -4,11 +4,10 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
 import emailjs from 'emailjs-com';
-import Snackbar, { SnackbarOrigin } from '@mui/material/Snackbar';
+import Snackbar from '@mui/material/Snackbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import Alert from '@mui/material/Alert';
 import { Fade } from 'react-awesome-reveal';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
@@ -68,21 +67,21 @@ function Contact() {
     };
 
 
-    const action = (
-        <React.Fragment>
-            <Button color="secondary" size="small" onClick={handleClose}>
-                UNDO
-            </Button>
-            <IconButton
-                size="small"
-                aria-label="close"
-                color="inherit"
-                onClick={handleClose}
-            >
-                <CloseIcon fontSize="small" />
-            </IconButton>
-        </React.Fragment>
-    );
+
+    <React.Fragment>
+        <Button color="secondary" size="small" onClick={handleClose}>
+            UNDO
+        </Button>
+        <IconButton
+            size="small"
+            aria-label="close"
+            color="inherit"
+            onClick={handleClose}
+        >
+            <CloseIcon fontSize="small" />
+        </IconButton>
+    </React.Fragment>
+
 
     return (
         <div className='Contact' id="contact">
@@ -165,16 +164,16 @@ function Contact() {
                             <div className='form__wrapper'>
                                 <form onSubmit={handleSubmit} ref={form}>
                                     <div className='row-1'>
-                                        <input type="text" placeholder="Your Name" name="to_name" required onChange={(e) => setName(e.target.value)} />
-                                        <input type="email" placeholder="Your Email" name="from_name" required onChange={(e) => setEmail(e.target.value)} />
+                                        <input type="text" placeholder="Your Name" name="to_name" required value={name} onChange={(e) => setName(e.target.value)} />
+                                        <input type="email" placeholder="Your Email" name="from_name" required value={email} onChange={(e) => setEmail(e.target.value)} />
 
                                     </div>
                                     <div className='row-2'>
-                                        <input type="text" placeholder="Subject" onChange={(e) => setSubject(e.target.value)} />
-                                        <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone" required onChange={(e) => setPhone(e.target.value)} />
+                                        <input type="text" placeholder="Subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
+                                        <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone" required value={phone} onChange={(e) => setPhone(e.target.value)} />
                                     </div>
                                     <div className='row-3'>
-                                        <textarea type="text" placeholder="Your Message" name='message' required onChange={(e) => setMessage(e.target.value)} />
+                                        <textarea type="text" placeholder="Your Message" name='message' required value={message} onChange={(e) => setMessage(e.target.value)} />
                                     </div>
                                     <button type='submit'>Send Message</button>
 

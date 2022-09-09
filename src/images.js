@@ -1,4 +1,3 @@
-import { cloneElement } from "react";
 import gmail1 from "./Assets/projects_images/gmail.png"
 import gmail2 from "./Assets/projects_images/gmail2.png"
 import gmail3 from "./Assets/projects_images/gmail3.png"
