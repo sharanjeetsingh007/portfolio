@@ -417,6 +417,73 @@ function Projects() {
                                     >D<span style={{ textTransform: "lowercase" }}>emo</span></Button>
                                 </AccordionDetails>
                             </Accordion>
+                            <Accordion
+                                className='accordin'
+                                expanded={expanded === 'panel10'} onChange={handleChange('panel10')}
+                                onClick={() => {
+                                    if (value === 10) {
+                                        setValue(0)
+                                    } else {
+                                        setValue(10)
+
+                                    }
+
+                                }}
+                            >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography component={'span'}><h4>Machine Learning (Predicting sales)</h4></Typography>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    onClick={e => e.stopPropagation()}
+                                >
+                                    <Typography>
+                                        The project is based on predicting the next 3 month sales of an organisation using the past data set of their sales with leveraging the upgingi as weel a catboost model for prediction and error percentage
+
+                                    </Typography>
+                                    <Button className='demo demo__internship' variant="contained"
+                                        style={{ width: "18%", marginTop: "15px", padding: "4px", cursor: "no-drop" }}
+
+                                    >N<span style={{ textTransform: "lowercase" }}>ot Available</span></Button>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion
+                                className='accordin'
+                                expanded={expanded === 'panel11'} onChange={handleChange('panel11')}
+                                onClick={() => {
+                                    if (value === 11) {
+                                        setValue(0)
+                                    } else {
+                                        setValue(11)
+
+                                    }
+
+                                }}
+                            >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography component={'span'}><h4>AI (For predicting the cancer tumor)</h4></Typography>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    onClick={e => e.stopPropagation()}
+                                >
+                                    <Typography>
+                                        The project is based on the dataset of the cancer patient of both having cancers tumor and non cancers tumor. The AI will analysis the dataset parameters/features and result by
+                                        using Tensform and Keras to identify whether the data is accureate and predict for the cancers turmor and non cancers tumor.
+
+                                    </Typography>
+                                    <Button className='demo demo__internship' variant="contained"
+                                        style={{ width: "18%", marginTop: "15px", padding: "4px", cursor: "no-drop" }}
+
+                                    >N<span style={{ textTransform: "lowercase" }}>ot Available</span></Button>
+                                </AccordionDetails>
+                            </Accordion>
 
                         </div>
                         <div className={value === 0 ? 'right__col-unactive' : 'right__col'}

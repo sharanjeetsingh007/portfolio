@@ -1,9 +1,9 @@
 .CardSkill {
   /* border: 1px solid gray; */
-  width: 238.5px;
+  /* width: 238.5px; */
   height: 227px;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 1 !important;
 
   flex-direction: column;
   align-items: center;

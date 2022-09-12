@@ -29,16 +29,20 @@
 }
 
 .cards__skills {
-  border: 1px solid whitesmoke;
+  /* border: 1px solid whitesmoke; */
+  /* border: 1px solid red; */
   padding: 19px 15px;
   height: 515px;
   max-width: 1305px !important;
   width: auto;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  gap: 20px;
+  gap: 20px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(238.5px, 1fr));
+  gap: 8px;
   overflow: scroll;
   transition: all 2s;
   animation-duration: 2s;

@@ -43,6 +43,14 @@ import swan4 from "./Assets/projects_images/swan4.png"
 import swan5 from "./Assets/projects_images/swan5.png"
 import swan6 from "./Assets/projects_images/swan6.png"
 import swan7 from "./Assets/projects_images/swan7.png"
+import ml1 from "./Assets/projects_images/ml1.png"
+import ml2 from "./Assets/projects_images/ml2.png"
+import ml3 from "./Assets/projects_images/ml3.png"
+import ml4 from "./Assets/projects_images/ml4.png"
+import ml5 from "./Assets/projects_images/ml5.png"
+import ai1 from "./Assets/projects_images/ai1.png"
+import ai2 from "./Assets/projects_images/ai2.png"
+
 
 
 
@@ -294,6 +302,50 @@ const allImages = [
 
         ],
     },
+    {
+        Name: "ML",
+        id: 10,
+        Images: [
+            {
+
+                Image: ml1
+            },
+            {
+
+                Image: ml2
+            },
+            {
+
+                Image: ml3
+            },
+            {
+
+                Image: ml4
+            },
+            {
+
+                Image: ml5
+            }
+
+
+        ],
+    },
+    {
+        Name: "AI",
+        id: 11,
+        Images: [
+            {
+
+                Image: ai1
+            },
+            {
+
+                Image: ai2
+            },
+
+        ],
+    },
+
 
 ]
 
