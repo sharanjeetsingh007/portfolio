@@ -50,6 +50,26 @@ import ml4 from "./Assets/projects_images/ml4.png"
 import ml5 from "./Assets/projects_images/ml5.png"
 import ai1 from "./Assets/projects_images/ai1.png"
 import ai2 from "./Assets/projects_images/ai2.png"
+import blogr1 from "./Assets/projects_images/blogr1.png"
+import blogr2 from "./Assets/projects_images/blogr2.png"
+import blogr3 from "./Assets/projects_images/blogr3.png"
+import blogr4 from "./Assets/projects_images/blogr4.png"
+import blogr5 from "./Assets/projects_images/blogr5.png"
+import easy1 from "./Assets/projects_images/easybank1.png"
+import easy2 from "./Assets/projects_images/easybank2.png"
+import easy3 from "./Assets/projects_images/easybank3.png"
+import easy4 from "./Assets/projects_images/easybank4.png"
+import easy5 from "./Assets/projects_images/easybank5.png"
+import easy6 from "./Assets/projects_images/easybank6.png"
+import build1 from "./Assets/projects_images/buildcon1.png"
+import build2 from "./Assets/projects_images/buildcon2.png"
+import build3 from "./Assets/projects_images/buildcon3.png"
+import build4 from "./Assets/projects_images/buildcon5.png"
+import build5 from "./Assets/projects_images/buildcon6.png"
+import build6 from "./Assets/projects_images/buildcon7.png"
+import build7 from "./Assets/projects_images/buildcon8.png"
+
+
 
 
 
@@ -342,6 +362,102 @@ const allImages = [
 
                 Image: ai2
             },
+
+        ],
+    },
+    {
+        Name: "Blogr",
+        id: 12,
+        Images: [
+            {
+
+                Image: blogr1
+            },
+            {
+
+                Image: blogr2
+            },
+            {
+
+                Image: blogr3
+            },
+            {
+
+                Image: blogr4
+            },
+            {
+
+                Image: blogr5
+            },
+
+
+        ],
+    },
+    {
+        Name: "Easy bank",
+        id: 13,
+        Images: [
+            {
+
+                Image: easy1
+            },
+            {
+
+                Image: easy2
+            },
+            {
+
+                Image: easy3
+            },
+            {
+
+                Image: easy4
+            },
+            {
+
+                Image: easy5
+            },
+            {
+
+                Image: easy6
+            },
+
+
+        ],
+    },
+    {
+        Name: "Buildcon",
+        id: 14,
+        Images: [
+            {
+
+                Image: build1
+            },
+            {
+
+                Image: build2
+            },
+            {
+
+                Image: build3
+            },
+            {
+
+                Image: build4
+            },
+            {
+
+                Image: build5
+            },
+            {
+
+                Image: build6
+            },
+            {
+
+                Image: build7
+            },
+
 
         ],
     },

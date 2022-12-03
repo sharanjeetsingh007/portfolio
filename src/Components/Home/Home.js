@@ -54,22 +54,22 @@ function Home() {
                         >Resume</Button>
                     </div>
                 </div>
-                {/* <button className='down__btn'>k</button> */}
-                {/* <AttentionSeeker effect="bounce" delay={50} triggerOnce> */}
-                <div className={css(styles.bounce)}>
-                    <Link
-                        // className={css(styles.bounce)}
-                        to="skills" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}
-                    > <IconButton className="down__btn" aria-label="scroll-down">
-                            <BsChevronDown
-                                style={{ fontSize: "40px", color: "black" }}
-                            />
-                        </IconButton>
 
-                    </Link>
-                </div>
-                {/* </AttentionSeeker> */}
 
+            </div>
+            <div
+                // className={`${css(styles.bounce)} down--btn`
+                className='down--btn'
+            >
+                <Link to="skills" activeClass="active" spy={true} smooth={true} duration={500} offset={-53}>
+                    <IconButton className="down__btn" aria-label="scroll-down">
+                        <BsChevronDown
+                            className={css(styles.bounce)}
+                            style={{ fontSize: "50px", color: "black" }}
+                        />
+                    </IconButton>
+
+                </Link>
             </div>
 
         </div>

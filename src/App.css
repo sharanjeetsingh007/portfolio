@@ -9,10 +9,7 @@
   width: 100%;
   /* border: 1px solid red; */
   /* background-image: url("https://www.onlygfx.com/wp-content/uploads/2018/02/dark-blue-watercolor-background-4-1024x778.jpg"); */
-  background-image: url("./Assets/main_bg.jpeg");
-  background-size: 78%;
-  background-repeat: no-repeat;
-  background-position: center -27px;
+
   /* overflow: scroll; */
 }
 
