@@ -143,7 +143,7 @@ function Projects() {
                                     >D<span style={{ textTransform: "lowercase" }}>emo</span></Button>
                                 </AccordionDetails>
                             </Accordion>
-                            <Accordion
+                            {/* <Accordion
                                 className='accordin'
 
                                 expanded={expanded === 'panel5'} onChange={handleChange('panel5')}
@@ -180,7 +180,7 @@ function Projects() {
                                         target="_blank"
                                     >D<span style={{ textTransform: "lowercase" }}>emo</span></Button>
                                 </AccordionDetails>
-                            </Accordion>
+                            </Accordion> */}
                             <Accordion
                                 className='accordin'
 
